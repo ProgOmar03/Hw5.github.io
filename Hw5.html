@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            width: 250px;
+            height: 330px;
+            padding: 20px;
+            background: transparent;
+            border-radius: 10px;
+            text-align: center;
+            background: linear-gradient(to bottom, red, yellow);
+
+        }
+
+        .login-container .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgb(255, 255, 255);
+            margin: 0 auto 20px;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            padding: 5px;
+            background: transparent;
+            border-bottom: 1px solid white;
+        }
+
+        .input-group i {
+            padding-right: 22px;
+            padding-bottom: 6px;
+            color: #fff;
+        }
+
+        .input-group input {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            background: transparent;
+            color: white;
+            padding: 5px;
+            margin-bottom: 7px;
+        }
+
+        .input-group input::placeholder {
+            color: white;
+        }
+
+        .login-container button {
+            width: 50%;
+            padding: 10px;
+            margin-top: 20px;
+            background: purple;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .login-container button:hover {
+            background: darkpurple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="avatar"></div>
+        <h2>Log in</h2>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" />
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" />
+        </div>
+        <button>Login</button>
+    </div>
+</body>
+
+</html>
